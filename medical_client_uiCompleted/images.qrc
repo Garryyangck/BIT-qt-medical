@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/patient.png</file>
+        <file>images/doctor.png</file>
+        <file>images/redCross.png</file>
+        <file>images/identity_swap.png</file>
+        <file>images/identity_swap_grey.png</file>
+        <file>images/dermatology.png</file>
+        <file>images/gynaecology.png</file>
+        <file>images/internalMedicine.png</file>
+        <file>images/ophthalmology.png</file>
+        <file>images/orthopedics.png</file>
+        <file>images/otolaryngology.png</file>
+        <file>images/pediatrics.png</file>
+        <file>images/surgery.png</file>
+    </qresource>
+</RCC>

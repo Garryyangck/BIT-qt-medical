@@ -1,0 +1,22 @@
+<RCC>
+    <qresource prefix="/">
+        <file>mainPage.qml</file>
+        <file>mycomponent/CircularAvatar.qml</file>
+        <file>main.qml</file>
+        <file>makeAppointment.qml</file>
+        <file>makeAppointment_listPage.qml</file>
+        <file>doctorInfo.qml</file>
+        <file>mycomponent/ChatBox.qml</file>
+        <file>communication.qml</file>
+        <file>chatPage.qml</file>
+        <file>myCases_list.qml</file>
+        <file>myCases.qml</file>
+        <file>mycomponent/MyButton.qml</file>
+        <file>editCases.qml</file>
+        <file>myInfo.qml</file>
+        <file>mycomponent/Input.qml</file>
+        <file>healthTest.qml</file>
+        <file>patientStatus_list.qml</file>
+        <file>patientStatus.qml</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,57 @@
+#include "signIn.h"
+#include "ui_signup.h"
+
+SignUp::SignUp(QWidget *parent) :
+    QWidget(parent),
+    ui(new Ui::SignUp)
+{
+    ui->setupUi(this);
+}
+
+SignUp::~SignUp()
+{
+    delete ui;
+}
+
+void SignUp::on_quitButton_clicked()
+{
+    this->close();
+}
+
+void SignUp::on_signupButton_clicked()
+{
+    // 获取输入的信息
+    QString username = ui->usernameLineEdit->text();
+    QString password = ui->passwordLineEdit->text();
+    int role = 0;
+    if(ui->patientRadioButton->isChecked())
+        role++;
+    QString gender = ui->genderLineEdit->text();
+    if(gender != QString("男") && gender != QString("女"))
+        gender = QString("");
+    QString age_str = ui->ageLineEdit->text();
+    int age = -1; // age=-1，代表年龄输入有误，在后面的显示界面中也不会进行显示
+    try {
+        age = age_str.toInt();
+    } catch (QException e) {
+        age = -1;
+    }
+    QString phoneNumber = ui->phoneNumberLineEdit->text();
+    try {
+        phoneNumber.toInt();
+    } catch (QException e) {
+        phoneNumber = QString("");
+    }
+
+//    // 调用 signUp 接口
+//    if(DBUtils::signUp(username, password, role, gender, age, phoneNumber)) {
+//        // 返回登录页面
+//        this->hide();
+//        User *user = new User(username, password, role);
+//        // 自定义信号，把 *user 传出去！
+//        emit reopenWidgt(user);
+
+//    } else {
+//        QMessageBox::critical(0, QString("注册失败"), QString("请稍后重试"));
+//    }
+}
